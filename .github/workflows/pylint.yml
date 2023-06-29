@@ -20,5 +20,4 @@ jobs:
         pip install pylint
     - name: Analysing the code with pylint
       run: |
-        cd /workspaces/mod4-miniproj1
-        ls >xx1
+        ls bikeshare_project  >xx1
