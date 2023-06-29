@@ -1,5 +1,0 @@
-Hello,
-
-This is a file uploaded to initialize the repository
-
-Pushing the changes back from codespace to github repo
