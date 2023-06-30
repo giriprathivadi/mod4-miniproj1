@@ -32,11 +32,11 @@ def run_training() -> None:
 
     # Pipeline fitting
     bikeshare_pipe.fit(X_train, y_train)
-    #y_pred = bikeshare_pipe.predict(X_test)
+    y_pred = bikeshare_pipe.predict(X_test)
 
     # Calculate the score/error
-    #print("R2 score:", r2_score(y_test, y_pred).round(2))
-    #print("Mean squared error:", mean_squared_error(y_test, y_pred))
+    print("R2 score:", r2_score(y_test, y_pred).round(2))
+    print("Mean squared error:", mean_squared_error(y_test, y_pred))
 
     # persist trained model
     save_pipeline(pipeline_to_persist = bikeshare_pipe)
